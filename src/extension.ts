@@ -2,6 +2,15 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
+class completionProvider implements vscode.CompletionItemProvider {
+	provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext): vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList<vscode.CompletionItem>> {
+		return [new vscode.CompletionItem("label")];
+	}
+	resolveCompletionItem?(item: vscode.CompletionItem, token: vscode.CancellationToken): vscode.ProviderResult<vscode.CompletionItem> {
+		return new vscode.CompletionItem("label");
+	}
+}
+
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -21,12 +30,19 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(disposable);
 
-	context.subscriptions.push(vscode.commands.registerCommand('react-with-ai.start_ext', () => {
-		vscode.window.showInformationMessage('The extension is started :D');
-	}));
+	context.subscriptions.push(
+		vscode.commands.registerCommand('react-with-ai.start_ext', () => {
+			vscode.window.showInformationMessage('The extension is started :D');
+		})
+	);
+
+	context.subscriptions.push(
+		vscode.languages.registerCompletionItemProvider(
+			[{ scheme: 'file', language: 'javascript' }], new completionProvider(), '.', ',')
+	);
 
 	vscode.languages.registerHoverProvider('javascript', {
-		provideHover(document, position, token){
+		provideHover(document, position, token) {
 			console.log('------------------');
 			console.log('doc: ' + document.getText(new vscode.Range(0, 0, position.line, position.character)));
 			console.log('pos: ' + JSON.stringify(position));
@@ -40,4 +56,4 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 // This method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }
