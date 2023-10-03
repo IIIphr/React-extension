@@ -16,6 +16,10 @@
       {
         "command": "react-with-ai.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "react-with-ai.start_ext",
+        "title": "Start the extension"
       }
     ]
   },
