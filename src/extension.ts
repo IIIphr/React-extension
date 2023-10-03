@@ -24,6 +24,19 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('react-with-ai.start_ext', () => {
 		vscode.window.showInformationMessage('The extension is started :D');
 	}));
+
+	vscode.languages.registerHoverProvider('javascript', {
+		provideHover(document, position, token){
+			console.log('------------------');
+			console.log('doc: ' + document.getText(new vscode.Range(0, 0, position.line, position.character)));
+			console.log('pos: ' + JSON.stringify(position));
+			console.log('tok: ' + JSON.stringify(token));
+			console.log('------------------');
+			return {
+				contents: ['well xd']
+			}
+		}
+	});
 }
 
 // This method is called when your extension is deactivated
