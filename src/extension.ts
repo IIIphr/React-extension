@@ -13,6 +13,13 @@ class completionProvider implements vscode.CompletionItemProvider {
 
 class inlineCompletionProvider implements vscode.InlineCompletionItemProvider {
 	provideInlineCompletionItems(document: vscode.TextDocument, position: vscode.Position, context: vscode.InlineCompletionContext, token: vscode.CancellationToken): vscode.ProviderResult<vscode.InlineCompletionItem[] | vscode.InlineCompletionList> {
+		console.log("**********************************");
+		console.log('doc: ' + document.getText(new vscode.Range(0, 0, position.line, position.character)));
+		console.log('ctx: ' + JSON.stringify(context));
+		console.log('txt: ' + document.getText(context.selectedCompletionInfo?.range));
+		console.log('inf: ' + context.selectedCompletionInfo?.text);
+		console.log('trg: ' + context.triggerKind);
+		console.log("**********************************");
 		return [new vscode.InlineCompletionItem("Ah man")];
 	}
 }
