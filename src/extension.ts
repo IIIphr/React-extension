@@ -11,6 +11,12 @@ class completionProvider implements vscode.CompletionItemProvider {
 	}
 }
 
+class inlineCompletionProvider implements vscode.InlineCompletionItemProvider {
+	provideInlineCompletionItems(document: vscode.TextDocument, position: vscode.Position, context: vscode.InlineCompletionContext, token: vscode.CancellationToken): vscode.ProviderResult<vscode.InlineCompletionItem[] | vscode.InlineCompletionList> {
+		return [new vscode.InlineCompletionItem("Ah man")];
+	}
+}
+
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -39,6 +45,11 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
 		vscode.languages.registerCompletionItemProvider(
 			[{ scheme: 'file', language: 'javascript' }], new completionProvider(), '.', ',')
+	);
+
+	context.subscriptions.push(
+		vscode.languages.registerInlineCompletionItemProvider(
+			[{ scheme: 'file', language: 'javascript' }], new inlineCompletionProvider())
 	);
 
 	vscode.languages.registerHoverProvider('javascript', {
