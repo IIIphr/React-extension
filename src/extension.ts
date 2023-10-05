@@ -15,6 +15,7 @@ class completionProvider implements vscode.CompletionItemProvider {
 class inlineCompletionProvider implements vscode.InlineCompletionItemProvider {
 	provideInlineCompletionItems(document: vscode.TextDocument, position: vscode.Position, context: vscode.InlineCompletionContext, token: vscode.CancellationToken): vscode.ProviderResult<vscode.InlineCompletionItem[] | vscode.InlineCompletionList> {
 		console.log(JSON.stringify(Parser.parse(document)));
+		console.log(JSON.stringify(Parser.parse(document, position)));
 		return [new vscode.InlineCompletionItem("Ah man")];
 	}
 }
