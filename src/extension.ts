@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import { Parser } from './parser';
 
 class completionProvider implements vscode.CompletionItemProvider {
 	provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext): vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList<vscode.CompletionItem>> {
@@ -13,13 +14,7 @@ class completionProvider implements vscode.CompletionItemProvider {
 
 class inlineCompletionProvider implements vscode.InlineCompletionItemProvider {
 	provideInlineCompletionItems(document: vscode.TextDocument, position: vscode.Position, context: vscode.InlineCompletionContext, token: vscode.CancellationToken): vscode.ProviderResult<vscode.InlineCompletionItem[] | vscode.InlineCompletionList> {
-		console.log("**********************************");
-		console.log('doc: ' + document.getText(new vscode.Range(0, 0, position.line, position.character)));
-		console.log('ctx: ' + JSON.stringify(context));
-		console.log('txt: ' + document.getText(context.selectedCompletionInfo?.range));
-		console.log('inf: ' + context.selectedCompletionInfo?.text);
-		console.log('trg: ' + context.triggerKind);
-		console.log("**********************************");
+		console.log(JSON.stringify(Parser.parse(document)));
 		return [new vscode.InlineCompletionItem("Ah man")];
 	}
 }
@@ -61,11 +56,6 @@ export function activate(context: vscode.ExtensionContext) {
 
 	vscode.languages.registerHoverProvider('javascript', {
 		provideHover(document, position, token) {
-			console.log('------------------');
-			console.log('doc: ' + document.getText(new vscode.Range(0, 0, position.line, position.character)));
-			console.log('pos: ' + JSON.stringify(position));
-			console.log('tok: ' + JSON.stringify(token));
-			console.log('------------------');
 			return {
 				contents: ['well xd']
 			}
