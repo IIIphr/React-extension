@@ -48,7 +48,11 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
 		vscode.commands.registerCommand('react-guide.show_panel', () => {
 			const panel = vscode.window.createWebviewPanel('guide', 'Guide panel', vscode.ViewColumn.Beside);
-			panel.webview.html = guidePanelHtml();
+			panel.webview.html = guidePanelHtml(
+				Parser.getCurrentToken(
+					vscode.window.activeTextEditor?.document , vscode.window.activeTextEditor?.selection.active
+				)
+			);
 		})
 	);
 
@@ -74,6 +78,6 @@ export function activate(context: vscode.ExtensionContext) {
 // This method is called when your extension is deactivated
 export function deactivate() { }
 
-function guidePanelHtml(){
-	return `<h1>Hi there!</h1>`;
+function guidePanelHtml(token: string){
+	return `<h1>` + token + `</h1>`;
 }

@@ -27,7 +27,15 @@
         "command": "react-guide.show_panel",
         "title": "Show the guide panel"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "true",
+          "command": "react-guide.show_panel"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
