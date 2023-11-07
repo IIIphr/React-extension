@@ -22,6 +22,10 @@
       {
         "command": "react-guide.start_ext",
         "title": "Start the extension"
+      },
+      {
+        "command": "react-guide.show_panel",
+        "title": "Show the guide panel"
       }
     ]
   },

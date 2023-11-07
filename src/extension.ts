@@ -26,42 +26,48 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "react-with-ai" is now active!');
+	console.log('Congratulations, your extension "react-guide" is now active!');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('react-with-ai.helloWorld', () => {
+	let disposable = vscode.commands.registerCommand('react-guide.helloWorld', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from React With AI!');
+		vscode.window.showInformationMessage('Hello World from React Guide!');
 	});
 
 	context.subscriptions.push(disposable);
 
 	context.subscriptions.push(
-		vscode.commands.registerCommand('react-with-ai.start_ext', () => {
+		vscode.commands.registerCommand('react-guide.start_ext', () => {
 			vscode.window.showInformationMessage('The extension is started :D');
 		})
 	);
 
 	context.subscriptions.push(
-		vscode.languages.registerCompletionItemProvider(
-			[{ scheme: 'file', language: 'javascript' }], new completionProvider(), '.', ',')
+		vscode.commands.registerCommand('react-guide.show_panel', () => {
+			vscode.window.createWebviewPanel('guide', 'Guide panel', vscode.ViewColumn.Beside);
+		})
 	);
 
-	context.subscriptions.push(
-		vscode.languages.registerInlineCompletionItemProvider(
-			[{ scheme: 'file', language: 'javascript' }], new inlineCompletionProvider())
-	);
+	// context.subscriptions.push(
+	// 	vscode.languages.registerCompletionItemProvider(
+	// 		[{ scheme: 'file', language: 'javascript' }], new completionProvider(), '.', ',')
+	// );
 
-	vscode.languages.registerHoverProvider('javascript', {
-		provideHover(document, position, token) {
-			return {
-				contents: ['well xd']
-			}
-		}
-	});
+	// context.subscriptions.push(
+	// 	vscode.languages.registerInlineCompletionItemProvider(
+	// 		[{ scheme: 'file', language: 'javascript' }], new inlineCompletionProvider())
+	// );
+
+	// vscode.languages.registerHoverProvider('javascript', {
+	// 	provideHover(document, position, token) {
+	// 		return {
+	// 			contents: ['well xd']
+	// 		}
+	// 	}
+	// });
 }
 
 // This method is called when your extension is deactivated
