@@ -5,7 +5,7 @@ import { Parser } from './parser';
 
 class completionProvider implements vscode.CompletionItemProvider {
 	provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext): vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList<vscode.CompletionItem>> {
-		return [new vscode.CompletionItem("label")];
+		return [new vscode.CompletionItem("label"),new vscode.CompletionItem("label"),new vscode.CompletionItem("label"),new vscode.CompletionItem("label")];
 	}
 	resolveCompletionItem?(item: vscode.CompletionItem, token: vscode.CancellationToken): vscode.ProviderResult<vscode.CompletionItem> {
 		return new vscode.CompletionItem("label");

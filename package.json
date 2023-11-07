@@ -1,7 +1,7 @@
 {
-  "name": "react-with-ai",
-  "displayName": "React With AI",
-  "description": "React code suggestion using AI",
+  "name": "react-guide",
+  "displayName": "React Guide",
+  "description": "React functions guide",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.82.0"
@@ -16,11 +16,11 @@
   "contributes": {
     "commands": [
       {
-        "command": "react-with-ai.helloWorld",
+        "command": "react-guide.helloWorld",
         "title": "Hello World"
       },
       {
-        "command": "react-with-ai.start_ext",
+        "command": "react-guide.start_ext",
         "title": "Start the extension"
       }
     ]
@@ -44,5 +44,9 @@
     "mocha": "^10.2.0",
     "typescript": "^5.2.2",
     "@vscode/test-electron": "^2.3.4"
-  }
+  },
+  "repository": {
+    "url": "https://github.com/IIIphr/React-extension"
+  },
+  "publisher": "SepehrEbrahimi"
 }
