@@ -19,7 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(
 		vscode.commands.registerCommand('react-guide.show_panel', () => {
-			const word = Parser.getCurrentToken(
+			const word = Parser.getCurrentWord(
 				vscode.window.activeTextEditor?.document , vscode.window.activeTextEditor?.selection.active
 			)
 			PanelBuilder.buildPanel(word + " Guide", word, Database.getGuide(word), context);

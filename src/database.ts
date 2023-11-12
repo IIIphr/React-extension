@@ -7,6 +7,6 @@ export class Database {
         if(index != -1){
             return db.guides[index].guide;
         }
-        return "Couldn't found the word xd";
+        return "No data on this word.";
     }
 }
