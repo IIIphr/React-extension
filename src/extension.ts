@@ -2,6 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { Parser } from './parser';
+import { Database } from './database';
 
 class completionProvider implements vscode.CompletionItemProvider {
 	provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext): vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList<vscode.CompletionItem>> {
@@ -47,12 +48,11 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(
 		vscode.commands.registerCommand('react-guide.show_panel', () => {
-			const panel = vscode.window.createWebviewPanel('guide', 'Guide panel', vscode.ViewColumn.Beside);
-			panel.webview.html = guidePanelHtml(
-				Parser.getCurrentToken(
-					vscode.window.activeTextEditor?.document , vscode.window.activeTextEditor?.selection.active
-				)
-			);
+			const word = Parser.getCurrentToken(
+				vscode.window.activeTextEditor?.document , vscode.window.activeTextEditor?.selection.active
+			)
+			const panel = vscode.window.createWebviewPanel('guide', word + ' Guide', vscode.ViewColumn.Beside);
+			panel.webview.html = guidePanelHtml(word);
 		})
 	);
 
@@ -79,5 +79,5 @@ export function activate(context: vscode.ExtensionContext) {
 export function deactivate() { }
 
 function guidePanelHtml(token: string){
-	return `<h1>` + token + `</h1>`;
+	return '<h1>' + token + '</h1><p>' + Database.getGuide(token) + '</p>';
 }
