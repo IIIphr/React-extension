@@ -3,6 +3,7 @@
 import * as vscode from 'vscode';
 import { Parser } from './parser';
 import { Database } from './database';
+import { PanelBuilder } from './panelBuilder';
 
 class completionProvider implements vscode.CompletionItemProvider {
 	provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext): vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList<vscode.CompletionItem>> {
@@ -51,8 +52,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const word = Parser.getCurrentToken(
 				vscode.window.activeTextEditor?.document , vscode.window.activeTextEditor?.selection.active
 			)
-			const panel = vscode.window.createWebviewPanel('guide', word + ' Guide', vscode.ViewColumn.Beside);
-			panel.webview.html = guidePanelHtml(word);
+			PanelBuilder.buildPanel(word + " Guide", word, Database.getGuide(word));
 		})
 	);
 
@@ -77,7 +77,3 @@ export function activate(context: vscode.ExtensionContext) {
 
 // This method is called when your extension is deactivated
 export function deactivate() { }
-
-function guidePanelHtml(token: string){
-	return '<h1>' + token + '</h1><p>' + Database.getGuide(token) + '</p>';
-}

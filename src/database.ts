@@ -1,4 +1,3 @@
-import * as vscode from 'vscode';
 import * as db from './db.json';
 
 export class Database {
