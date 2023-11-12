@@ -32,7 +32,8 @@
       "editor/context": [
         {
           "when": "true",
-          "command": "react-guide.show_panel"
+          "command": "react-guide.show_panel",
+          "group": "navigation@1"
         }
       ]
     }
