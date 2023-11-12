@@ -18,7 +18,6 @@ export class Parser {
     }
 
     static getCurrentToken(document: vscode.TextDocument | undefined, position: vscode.Position | undefined): string{
-        console.log("here");
         if(document == undefined || position == undefined){
             return "";
         }

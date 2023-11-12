@@ -1,0 +1,14 @@
+body.vscode-light {
+    color: black;
+}
+
+body.vscode-dark {
+    color: aqua;
+}
+body.vscode-dark p {
+    color: rebeccapurple;
+}
+
+body.vscode-high-contrast {
+    color: red;
+}
