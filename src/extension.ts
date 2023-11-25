@@ -21,8 +21,20 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.commands.registerCommand('react-guide.show_panel', () => {
 			const word = Parser.getCurrentWord(
 				vscode.window.activeTextEditor?.document , vscode.window.activeTextEditor?.selection.active
-			)
+			);
 			PanelBuilder.buildPanel(word + " Guide", word, Database.getGuide(word), context);
+		})
+	);
+
+	context.subscriptions.push(
+		vscode.commands.registerCommand('react-guide.encode_json', () => {
+			Database.encode(context);
+		})
+	);
+
+	context.subscriptions.push(
+		vscode.commands.registerCommand('react-guide.decode_json', () => {
+			Database.decode(context);
 		})
 	);
 }

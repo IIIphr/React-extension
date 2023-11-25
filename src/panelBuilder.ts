@@ -14,7 +14,7 @@ export class PanelBuilder {
                 panel.webview.html = 
                 "<style>" + style + "</style>" +
                 "<h1>" + header + "</h1>" +
-                "<p>" + body + "</p>";
+                body;
             }
         });
     }

@@ -1,12 +1,17 @@
+.rtl {
+    direction: rtl;
+}
+
+.ltr{
+    direction: ltr;
+}
+
 body.vscode-light {
     color: black;
 }
 
 body.vscode-dark {
-    color: aqua;
-}
-body.vscode-dark p {
-    color: rebeccapurple;
+    color: white;
 }
 
 body.vscode-high-contrast {
