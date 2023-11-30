@@ -17,3 +17,12 @@ body.vscode-dark {
 body.vscode-high-contrast {
     color: red;
 }
+
+/* .code {
+    background-color: #343434;
+    word-wrap: break-word;
+    box-decoration-break: clone;
+    padding: .1rem .3rem .2rem;
+    border-radius: .2rem;
+    width: 100%;
+} */
