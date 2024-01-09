@@ -8,7 +8,7 @@ This extension supports RTL langues, especially Persian languge since it's my mo
 ### How it helps?
 By providing examples and documantaions right from within the editor, programmers can simply bring up a panel by right clicking on a specific function and see explanations, exmaples and helpful links that guide them to better use the React futures.
 
-## How it works?
+### How it works?
 Right now, the vision is that I (and later along the way, the community) write around 50 guides for 50 functions and features of React in markdown format, with Persian language included (or just Persian language, depending on how much time I have). Then the developer can right click on any word in their `.js` file and see the `Show the guide panel` option at the top of the context menu. By clicking it, the extension searches for the word the developer clicked on in its databse, and if it finds a guide for it, it'll display the guide in a panel.
 
 The guide is written in markdown (with some minor extensions for better RTL support), and will be complied into html for proper display of both RTL languages and code block highlighting.
