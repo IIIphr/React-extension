@@ -6,11 +6,7 @@ import * as vscode from 'vscode';
 export class Database {
 
     static md = markdownit("commonmark", {
-        html: true,
-
-        // highlight: function (str, lang) {
-        //     return '<pre><code class="lang-js">' + str + '</code></pre>';
-        // }
+        html: true
     }).use(
         require('markdown-it-container'), 'rtl'
     );
