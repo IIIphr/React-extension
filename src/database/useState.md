@@ -1,3 +1,5 @@
+# useState
+
 ### useState(initialState)
 
 Call useState at the top level of your component to declare a state variable.
@@ -5,13 +7,15 @@ Call useState at the top level of your component to declare a state variable.
 ::: rtl
 این تابع را برای تعریف یک متغیر حالت (state variable) در بالاترین لایه‌ی کامپوننت (component) خود صدا بزنید.
 :::
-	
-	import { useState } from 'react';
-	function MyComponent() {
-		const [age, setAge] = useState(28);
-		const [name, setName] = useState('Taylor');
-		const [todos, setTodos] = useState(() => createTodos());
-		// ...
+
+``` js
+import { useState } from 'react';
+function MyComponent() {
+	const [age, setAge] = useState(28);
+	const [name, setName] = useState('Taylor');
+	const [todos, setTodos] = useState(() => createTodos());
+	// ...
+```
 
 The convention is to name state variables like [something, setSomething] using array destructuring.
 

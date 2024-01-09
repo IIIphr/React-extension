@@ -6,22 +6,13 @@ import * as vscode from 'vscode';
 export class Database {
 
     static md = markdownit("commonmark", {
-        html: true
-    }).use(
-        require('markdown-it-container'), 'rtl', {
-            // render: function (tokens, idx){
-            //     var m = tokens[idx].info.trim().match(/^rtl\s+(.*)$/);
+        html: true,
 
-            //     if (tokens[idx].nesting === 1) {
-            //       // opening tag
-            //       return '<div class>\n';
-            
-            //     } else {
-            //       // closing tag
-            //       return '</details>\n';
-            //     }
-            // }
-        }
+        // highlight: function (str, lang) {
+        //     return '<pre><code class="lang-js">' + str + '</code></pre>';
+        // }
+    }).use(
+        require('markdown-it-container'), 'rtl'
     );
 
     static getGuide(word: string, context: vscode.ExtensionContext): string{

@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const word = Parser.getCurrentWord(
 				vscode.window.activeTextEditor?.document , vscode.window.activeTextEditor?.selection.active
 			);
-			PanelBuilder.buildPanel(word + " Guide", word, Database.getGuide(word, context), context);
+			PanelBuilder.buildPanel(word + " Guide", Database.getGuide(word, context), context);
 		})
 	);
 }

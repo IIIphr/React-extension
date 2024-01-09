@@ -3,7 +3,7 @@ import * as fs from 'fs';
 
 export class PanelBuilder {
 
-    static buildPanel(title: string, header: string, body: string, context: vscode.ExtensionContext) {
+    static buildPanel(title: string, body: string, context: vscode.ExtensionContext) {
         fs.readFile(context.extensionPath + '/src/style.css', (err, styleData) => {
             if(err){
                 console.log(err);
@@ -26,11 +26,10 @@ export class PanelBuilder {
                                     enableScripts: true
                                 });
                                 panel.webview.html = 
-                                "<style>" + prism + "</style>" +
-                                "<style>" + style + "</style>" +
-                                "<h1>" + header + "</h1>" +
+                                "<style>" + prism + "</style>\n" +
+                                "<style>" + style + "</style>\n" +
                                 body +
-                                "<script>" + js + "</script>";
+                                "\n<script>" + js + "</script>";
                             }
                         });
                     }
