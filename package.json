@@ -26,14 +26,6 @@
       {
         "command": "react-guide.show_panel",
         "title": "Show the guide panel"
-      },
-      {
-        "command": "react-guide.encode_json",
-        "title": "Encode the json file"
-      },
-      {
-        "command": "react-guide.decode_json",
-        "title": "Decode the json file"
       }
     ],
     "menus": {
@@ -55,6 +47,7 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
     "@types/mocha": "^10.0.2",
     "@types/node": "18.x",
     "@types/vscode": "^1.82.0",
@@ -69,5 +62,8 @@
   "repository": {
     "url": "https://github.com/IIIphr/React-extension"
   },
-  "publisher": "SepehrEbrahimi"
+  "publisher": "SepehrEbrahimi",
+  "dependencies": {
+    "markdown-it": "^14.0.0"
+  }
 }
