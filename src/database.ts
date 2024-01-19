@@ -11,17 +11,43 @@ export class Database {
         require('markdown-it-container'), 'rtl'
     );
 
-    static getGuide(word: string, context: vscode.ExtensionContext): string{
+    static getGuideEn(word: string, context: vscode.ExtensionContext): string{
         const index = db.guides.findIndex(e => e.word === word);
         if(index !== -1){
             return Database.md.render(
                 readFileSync(
                     context.extensionPath.toString()
                     + "/src/database/"
-                    + db.guides[index].guide
+                    + db.guides[index].guide_en
                 ).toString()
             );
         }
-        return "No data on this word.";
+        return Database.md.render(
+            readFileSync(
+                context.extensionPath.toString()
+                + "/src/database/"
+                + db.not_found.en
+            ).toString()
+        );
+    }
+
+    static getGuideFa(word: string, context: vscode.ExtensionContext): string{
+        const index = db.guides.findIndex(e => e.word === word);
+        if(index !== -1){
+            return Database.md.render(
+                readFileSync(
+                    context.extensionPath.toString()
+                    + "/src/database/"
+                    + db.guides[index].guide_fa
+                ).toString()
+            );
+        }
+        return Database.md.render(
+            readFileSync(
+                context.extensionPath.toString()
+                + "/src/database/"
+                + db.not_found.fa
+            ).toString()
+        );
     }
 }

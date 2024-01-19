@@ -16,23 +16,28 @@
   "contributes": {
     "commands": [
       {
-        "command": "react-guide.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "react-guide.start_ext",
         "title": "Start the extension"
       },
       {
-        "command": "react-guide.show_panel",
+        "command": "react-guide.show_panel_en",
         "title": "Show the guide panel"
+      },
+      {
+        "command": "react-guide.show_panel_fa",
+        "title": "نمایش صفحه‌ی راهنما"
       }
     ],
     "menus": {
       "editor/context": [
         {
           "when": "true",
-          "command": "react-guide.show_panel",
+          "command": "react-guide.show_panel_en",
+          "group": "navigation@1"
+        },
+        {
+          "when": "true",
+          "command": "react-guide.show_panel_fa",
           "group": "navigation@1"
         }
       ]
