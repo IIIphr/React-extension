@@ -6,7 +6,7 @@ export class Parser {
         var res = [];
         for (var line = 0; line < (position ? position.line+1 : document.lineCount); line++) {
             var lineText = document.lineAt(line).text;
-            if(position && line == position.line){
+            if(position && line === position.line){
                 lineText = lineText.substring(0, position.character);
             }
             const words = lineText.trim().split(' ');
@@ -20,7 +20,7 @@ export class Parser {
     }
 
     static getCurrentWord(document: vscode.TextDocument | undefined, position: vscode.Position | undefined): string{
-        if(document == undefined || position == undefined){
+        if(document === undefined || position === undefined){
             return "";
         }
         var res = "";
