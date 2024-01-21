@@ -109,6 +109,11 @@
             "word": "forwardRef",
             "guide_en": "forwardRef_en.md",
             "guide_fa": "forwardRef_fa.md"
+        },
+        {
+            "word": "lazy",
+            "guide_en": "lazy_en.md",
+            "guide_fa": "lazy_fa.md"
         }
     ],
     "not_found": {
