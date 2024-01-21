@@ -89,6 +89,11 @@
             "word": "<Profiler>",
             "guide_en": "Profiler_en.md",
             "guide_fa": "Profiler_fa.md"
+        },
+        {
+            "word": "<StrictMode>",
+            "guide_en": "StrictMode_en.md",
+            "guide_fa": "StrictMode_fa.md"
         }
     ],
     "not_found": {
