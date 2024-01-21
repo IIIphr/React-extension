@@ -19,6 +19,11 @@
             "word": "useDebugValue",
             "guide_en": "useDebugValue_en.md",
             "guide_fa": "useDebugValue_fa.md"
+        },
+        {
+            "word": "useDeferredValue",
+            "guide_en": "useDeferredValue_en.md",
+            "guide_fa": "useDeferredValue_fa.md"
         }
     ],
     "not_found": {
