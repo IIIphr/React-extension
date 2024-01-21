@@ -39,6 +39,11 @@
             "word": "useImperativeHandle",
             "guide_en": "useImperativeHandle_en.md",
             "guide_fa": "useImperativeHandle_fa.md"
+        },
+        {
+            "word": "useInsertionEffect",
+            "guide_en": "useInsertionEffect_en.md",
+            "guide_fa": "useInsertionEffect_fa.md"
         }
     ],
     "not_found": {
