@@ -44,6 +44,11 @@
             "word": "useInsertionEffect",
             "guide_en": "useInsertionEffect_en.md",
             "guide_fa": "useInsertionEffect_fa.md"
+        },
+        {
+            "word": "useLayoutEffect",
+            "guide_en": "useLayoutEffect_en.md",
+            "guide_fa": "useLayoutEffect_fa.md"
         }
     ],
     "not_found": {
