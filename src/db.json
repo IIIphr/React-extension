@@ -69,6 +69,11 @@
             "word": "useSyncExternalStore",
             "guide_en": "useSyncExternalStore_en.md",
             "guide_fa": "useSyncExternalStore_fa.md"
+        },
+        {
+            "word": "useTransition",
+            "guide_en": "useTransition_en.md",
+            "guide_fa": "useTransition_fa.md"
         }
     ],
     "not_found": {
