@@ -74,6 +74,16 @@
             "word": "useTransition",
             "guide_en": "useTransition_en.md",
             "guide_fa": "useTransition_fa.md"
+        },
+        {
+            "word": "<Fragment>",
+            "guide_en": "Fragment_en.md",
+            "guide_fa": "Fragment_fa.md"
+        },
+        {
+            "word": "<>",
+            "guide_en": "Fragment_en.md",
+            "guide_fa": "Fragment_fa.md"
         }
     ],
     "not_found": {
