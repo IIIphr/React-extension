@@ -9,6 +9,10 @@ All notable changes to the "react-with-ai" extension will be documented in this 
 
 ## [Unreleased]
 
+- Added 5 APIs.
+
+## [0.8.0]
+
 - Added the ability to properly parse components and html tags. The parser should correctly recognize if it's a tag and return the opening tag for processing.
 - Added 4 components.
 - Added `JSX` higlighting to `prism`.

@@ -99,6 +99,11 @@
             "word": "<Suspense>",
             "guide_en": "Suspense_en.md",
             "guide_fa": "Suspense_fa.md"
+        },
+        {
+            "word": "createContext",
+            "guide_en": "createContext_en.md",
+            "guide_fa": "createContext_fa.md"
         }
     ],
     "not_found": {
