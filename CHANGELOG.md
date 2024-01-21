@@ -1,7 +1,5 @@
 # Change Log
 
-All notable changes to the "react-with-ai" extension will be documented in this file.
-
 ## [TODO]
 
 - Multiple locale support (instead of only English and Persian).
