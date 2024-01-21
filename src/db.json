@@ -9,6 +9,11 @@
             "word": "useCallback",
             "guide_en": "useCallback_en.md",
             "guide_fa": "useCallback_fa.md"
+        },
+        {
+            "word": "useContext",
+            "guide_en": "useContext_en.md",
+            "guide_fa": "useContext_fa.md"
         }
     ],
     "not_found": {
