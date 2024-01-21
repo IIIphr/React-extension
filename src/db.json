@@ -119,6 +119,11 @@
             "word": "memo",
             "guide_en": "memo_en.md",
             "guide_fa": "memo_fa.md"
+        },
+        {
+            "word": "startTransition",
+            "guide_en": "startTransition_en.md",
+            "guide_fa": "startTransition_fa.md"
         }
     ],
     "not_found": {
