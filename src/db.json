@@ -59,6 +59,11 @@
             "word": "useReducer",
             "guide_en": "useReducer_en.md",
             "guide_fa": "useReducer_fa.md"
+        },
+        {
+            "word": "useRef",
+            "guide_en": "useRef_en.md",
+            "guide_fa": "useRef_fa.md"
         }
     ],
     "not_found": {
