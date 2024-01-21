@@ -9,6 +9,8 @@ All notable changes to the "react-with-ai" extension will be documented in this 
 
 ## [Unreleased]
 
+## [0.9.0]
+
 - Added 5 APIs.
 
 ## [0.8.0]
