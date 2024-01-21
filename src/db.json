@@ -49,6 +49,11 @@
             "word": "useLayoutEffect",
             "guide_en": "useLayoutEffect_en.md",
             "guide_fa": "useLayoutEffect_fa.md"
+        },
+        {
+            "word": "useMemo",
+            "guide_en": "useMemo_en.md",
+            "guide_fa": "useMemo_fa.md"
         }
     ],
     "not_found": {
