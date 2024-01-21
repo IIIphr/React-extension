@@ -104,6 +104,11 @@
             "word": "createContext",
             "guide_en": "createContext_en.md",
             "guide_fa": "createContext_fa.md"
+        },
+        {
+            "word": "forwardRef",
+            "guide_en": "forwardRef_en.md",
+            "guide_fa": "forwardRef_fa.md"
         }
     ],
     "not_found": {
