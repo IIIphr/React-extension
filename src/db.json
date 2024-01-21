@@ -29,6 +29,11 @@
             "word": "useEffect",
             "guide_en": "useEffect_en.md",
             "guide_fa": "useEffect_fa.md"
+        },
+        {
+            "word": "useId",
+            "guide_en": "useId_en.md",
+            "guide_fa": "useId_fa.md"
         }
     ],
     "not_found": {
