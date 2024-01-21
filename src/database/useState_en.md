@@ -25,7 +25,7 @@ See more examples below.
 
 ### Returns 
 
-useState returns an array with exactly two values:
+`useState` returns an array with exactly two values:
 
 1. The current state. During the first render, it will match the `initialState` you have passed.
 
