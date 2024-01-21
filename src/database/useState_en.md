@@ -15,8 +15,6 @@ function MyComponent() {
 
 The convention is to name state variables like `[something, setSomething]` using array destructuring.
 
-See more examples below.
-
 ### Parameters
 
 * `initialState`: The value you want the state to be initially. It can be a value of any type, but there is a special behavior for functions. This argument is ignored after the initial render.
