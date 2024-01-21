@@ -4,6 +4,11 @@
             "word": "useState",
             "guide_en": "useState_en.md",
             "guide_fa": "useState_fa.md"
+        },
+        {
+            "word": "useCallback",
+            "guide_en": "useCallback_en.md",
+            "guide_fa": "useCallback_fa.md"
         }
     ],
     "not_found": {
