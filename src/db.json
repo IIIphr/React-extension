@@ -114,6 +114,11 @@
             "word": "lazy",
             "guide_en": "lazy_en.md",
             "guide_fa": "lazy_fa.md"
+        },
+        {
+            "word": "memo",
+            "guide_en": "memo_en.md",
+            "guide_fa": "memo_fa.md"
         }
     ],
     "not_found": {
