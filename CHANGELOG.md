@@ -9,6 +9,8 @@ All notable changes to the "react-with-ai" extension will be documented in this 
 
 ## [Unreleased]
 
+- Added the ability to properly parse components and html tags. The parser should correctly recognize if it's a tag and return the opening tag for processing.
+
 ## [0.7.0]
 
 Because of some problems with the icon (probably typos in file name), the version was jumped from [0.4.0] to [0.7.0].
