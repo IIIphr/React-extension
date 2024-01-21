@@ -24,6 +24,11 @@
             "word": "useDeferredValue",
             "guide_en": "useDeferredValue_en.md",
             "guide_fa": "useDeferredValue_fa.md"
+        },
+        {
+            "word": "useEffect",
+            "guide_en": "useEffect_en.md",
+            "guide_fa": "useEffect_fa.md"
         }
     ],
     "not_found": {
