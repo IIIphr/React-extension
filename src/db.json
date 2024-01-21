@@ -1,11 +1,6 @@
 {
     "guides": [
         {
-            "word": "useState",
-            "guide_en": "useState_en.md",
-            "guide_fa": "useState_fa.md"
-        },
-        {
             "word": "useCallback",
             "guide_en": "useCallback_en.md",
             "guide_fa": "useCallback_fa.md"
@@ -64,6 +59,16 @@
             "word": "useRef",
             "guide_en": "useRef_en.md",
             "guide_fa": "useRef_fa.md"
+        },
+        {
+            "word": "useState",
+            "guide_en": "useState_en.md",
+            "guide_fa": "useState_fa.md"
+        },
+        {
+            "word": "useSyncExternalStore",
+            "guide_en": "useSyncExternalStore_en.md",
+            "guide_fa": "useSyncExternalStore_fa.md"
         }
     ],
     "not_found": {
