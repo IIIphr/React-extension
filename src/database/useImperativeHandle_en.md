@@ -4,7 +4,7 @@
 
 Call `useImperativeHandle` at the top level of your component to customize the ref handle it exposes:
 
-``` js
+``` jsx
 import { forwardRef, useImperativeHandle } from 'react';
 
 const MyInput = forwardRef(function MyInput(props, ref) {

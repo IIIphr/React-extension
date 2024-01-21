@@ -4,7 +4,7 @@
 
 Call `useSyncExternalStore` at the top level of your component to read a value from an external data store.
 
-``` js
+``` jsx
 import { useSyncExternalStore } from 'react';
 import { todosStore } from './todoStore.js';
 
@@ -44,7 +44,7 @@ The current snapshot of the store which you can use in your rendering logic.
 
 * For example, the following are discouraged:
 
-``` js
+``` jsx
 const LazyProductDetailPage = lazy(() => import('./ProductDetailPage.js'));
 
 function ShoppingApp() {

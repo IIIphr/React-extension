@@ -5,7 +5,7 @@
 Call `useContext` at the top level of your component to read and subscribe to context.
 
 
-``` js
+``` jsx
 import { useContext } from 'react';
 
 function MyComponent() {

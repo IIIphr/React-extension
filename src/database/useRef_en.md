@@ -4,7 +4,7 @@
 
 Call `useRef` at the top level of your component to declare a ref.
 
-``` js
+``` jsx
 import { useRef } from 'react';
 
 function MyComponent() {

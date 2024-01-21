@@ -4,7 +4,7 @@
 
 Use `StrictMode` to enable additional development behaviors and warnings for the component tree inside:
 
-``` js
+``` jsx
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 

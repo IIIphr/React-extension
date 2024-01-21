@@ -4,7 +4,7 @@
 
 Call `useInsertionEffect` to insert styles before any effects fire that may need to read layout:
 
-``` js
+``` jsx
 import { useInsertionEffect } from 'react';
 
 // Inside your CSS-in-JS library

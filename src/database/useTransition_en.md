@@ -4,7 +4,7 @@
 
 Call `useTransition` at the top level of your component to mark some state updates as transitions.
 
-``` js
+``` jsx
 import { useTransition } from 'react';
 
 function TabContainer() {
@@ -31,7 +31,7 @@ function TabContainer() {
 
 The `startTransition` function returned by `useTransition` lets you mark a state update as a transition.
 
-``` js
+``` jsx
 function TabContainer() {
   const [isPending, startTransition] = useTransition();
   const [tab, setTab] = useState('about');

@@ -4,7 +4,7 @@
 
 Call `useReducer` at the top level of your component to manage its state with a reducer.
 
-``` js
+``` jsx
 import { useReducer } from 'react';
 
 function reducer(state, action) {
@@ -44,7 +44,7 @@ function MyComponent() {
 
 The `dispatch` function returned by `useReducer` lets you update the state to a different value and trigger a re-render. You need to pass the action as the only argument to the `dispatch` function:
 
-``` js
+``` jsx
 const [state, dispatch] = useReducer(reducer, { age: 42 });
 
 function handleClick() {

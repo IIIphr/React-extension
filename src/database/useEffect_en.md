@@ -4,7 +4,7 @@
 
 Call `useEffect` at the top level of your component to declare an Effect:
 
-``` js
+``` jsx
 import { useEffect } from 'react';
 import { createConnection } from './chat.js';
 

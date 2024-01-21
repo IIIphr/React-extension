@@ -6,7 +6,7 @@
 تابع `useState` را برای تعریف یک متغیر حالت (state variable) در بالاترین لایه‌ی کامپوننت (component) خود صدا بزنید.
 :::
 
-``` js
+``` jsx
 import { useState } from 'react';
 function MyComponent() {
 	const [age, setAge] = useState(28);

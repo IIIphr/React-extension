@@ -4,7 +4,7 @@
 
 Call `useState` at the top level of your component to declare a state variable.
 
-``` js
+``` jsx
 import { useState } from 'react';
 function MyComponent() {
 	const [age, setAge] = useState(28);

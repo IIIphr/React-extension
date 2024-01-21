@@ -4,7 +4,7 @@
 
 Call `useId` at the top level of your component to generate a unique ID:
 
-``` js
+``` jsx
 import { useId } from 'react';
 
 function PasswordField() {

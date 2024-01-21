@@ -4,7 +4,7 @@
 
 Call `useDeferredValue` at the top level of your component to get a deferred version of that value.
 
-``` js
+``` jsx
 import { useState, useDeferredValue } from 'react';
 
 function SearchPage() {

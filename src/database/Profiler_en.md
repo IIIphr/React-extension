@@ -4,7 +4,7 @@
 
 Wrap a component tree in a `<Profiler>` to measure its rendering performance.
 
-``` html
+``` jsx
 <Profiler id="App" onRender={onRender}>
   <App />
 </Profiler>
@@ -24,7 +24,7 @@ Wrap a component tree in a `<Profiler>` to measure its rendering performance.
 
 React will call your `onRender` callback with information about what was rendered.
 
-``` js
+``` jsx
 function onRender(id, phase, actualDuration, baseDuration, startTime, commitTime) {
   // Aggregate or log render timings...
 }

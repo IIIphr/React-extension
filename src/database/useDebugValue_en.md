@@ -4,7 +4,7 @@
 
 Call `useDebugValue` at the top level of your custom Hook to display a readable debug value:
 
-``` js
+``` jsx
 import { useDebugValue } from 'react';
 
 function useOnlineStatus() {

@@ -4,7 +4,7 @@
 
 Call `useLayoutEffect` to perform the layout measurements before the browser repaints the screen:
 
-``` js
+``` jsx
 import { useState, useRef, useLayoutEffect } from 'react';
 
 function Tooltip() {

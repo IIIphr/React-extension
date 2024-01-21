@@ -4,7 +4,7 @@
 
 Call `useMemo` at the top level of your component to cache a calculation between re-renders:
 
-``` js
+``` jsx
 import { useMemo } from 'react';
 
 function TodoList({ todos, tab }) {
