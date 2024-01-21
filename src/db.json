@@ -14,6 +14,11 @@
             "word": "useContext",
             "guide_en": "useContext_en.md",
             "guide_fa": "useContext_fa.md"
+        },
+        {
+            "word": "useDebugValue",
+            "guide_en": "useDebugValue_en.md",
+            "guide_fa": "useDebugValue_fa.md"
         }
     ],
     "not_found": {
