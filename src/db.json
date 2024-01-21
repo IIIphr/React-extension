@@ -84,6 +84,11 @@
             "word": "<>",
             "guide_en": "Fragment_en.md",
             "guide_fa": "Fragment_fa.md"
+        },
+        {
+            "word": "<Profiler>",
+            "guide_en": "Profiler_en.md",
+            "guide_fa": "Profiler_fa.md"
         }
     ],
     "not_found": {
