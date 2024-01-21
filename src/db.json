@@ -94,6 +94,11 @@
             "word": "<StrictMode>",
             "guide_en": "StrictMode_en.md",
             "guide_fa": "StrictMode_fa.md"
+        },
+        {
+            "word": "<Suspense>",
+            "guide_en": "Suspense_en.md",
+            "guide_fa": "Suspense_fa.md"
         }
     ],
     "not_found": {
