@@ -8,6 +8,8 @@
 
 ## [Unreleased]
 
+- Parser now adds arrows (`<>`) to the end or the beginning of the parsed words if necessary.
+
 ## [0.9.0]
 
 - Added 5 APIs.
