@@ -5,12 +5,16 @@
 - Multiple locale support (instead of only English and Persian).
 - Adding examples for each guide.
 - Adding options for context menu buttons (enabled, disabled)
+- Adding better theme support (Light, Dark, more).
 
 ## [Unreleased]
 
 - Parser now adds arrows (`<>`) to the end or the beginning of the parsed words if necessary.
 - Persian and English guide for `useState` got updated, a little.
 - Added Persian guide for `createContext`.
+- Changed folder structure for guides, to lay the ground workd for more locales.
+- Changed `db.json` structure to support the new folder structure more easily.
+- Changed how `buildPnale` is called and how it find guides, to support the new folder structure and making it easier to add new locales.
 
 ## [0.9.0]
 

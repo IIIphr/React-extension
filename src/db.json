@@ -2,132 +2,104 @@
     "guides": [
         {
             "word": "useCallback",
-            "guide_en": "useCallback_en.md",
-            "guide_fa": "useCallback_fa.md"
+            "guide": "useCallback.md"
         },
         {
             "word": "useContext",
-            "guide_en": "useContext_en.md",
-            "guide_fa": "useContext_fa.md"
+            "guide": "useContext.md"
         },
         {
             "word": "useDebugValue",
-            "guide_en": "useDebugValue_en.md",
-            "guide_fa": "useDebugValue_fa.md"
+            "guide": "useDebugValue.md"
         },
         {
             "word": "useDeferredValue",
-            "guide_en": "useDeferredValue_en.md",
-            "guide_fa": "useDeferredValue_fa.md"
+            "guide": "useDeferredValue.md"
         },
         {
             "word": "useEffect",
-            "guide_en": "useEffect_en.md",
-            "guide_fa": "useEffect_fa.md"
+            "guide": "useEffect.md"
         },
         {
             "word": "useId",
-            "guide_en": "useId_en.md",
-            "guide_fa": "useId_fa.md"
+            "guide": "useId.md"
         },
         {
             "word": "useImperativeHandle",
-            "guide_en": "useImperativeHandle_en.md",
-            "guide_fa": "useImperativeHandle_fa.md"
+            "guide": "useImperativeHandle.md"
         },
         {
             "word": "useInsertionEffect",
-            "guide_en": "useInsertionEffect_en.md",
-            "guide_fa": "useInsertionEffect_fa.md"
+            "guide": "useInsertionEffect.md"
         },
         {
             "word": "useLayoutEffect",
-            "guide_en": "useLayoutEffect_en.md",
-            "guide_fa": "useLayoutEffect_fa.md"
+            "guide": "useLayoutEffect.md"
         },
         {
             "word": "useMemo",
-            "guide_en": "useMemo_en.md",
-            "guide_fa": "useMemo_fa.md"
+            "guide": "useMemo.md"
         },
         {
             "word": "useReducer",
-            "guide_en": "useReducer_en.md",
-            "guide_fa": "useReducer_fa.md"
+            "guide": "useReducer.md"
         },
         {
             "word": "useRef",
-            "guide_en": "useRef_en.md",
-            "guide_fa": "useRef_fa.md"
+            "guide": "useRef.md"
         },
         {
             "word": "useState",
-            "guide_en": "useState_en.md",
-            "guide_fa": "useState_fa.md"
+            "guide": "useState.md"
         },
         {
             "word": "useSyncExternalStore",
-            "guide_en": "useSyncExternalStore_en.md",
-            "guide_fa": "useSyncExternalStore_fa.md"
+            "guide": "useSyncExternalStore.md"
         },
         {
             "word": "useTransition",
-            "guide_en": "useTransition_en.md",
-            "guide_fa": "useTransition_fa.md"
+            "guide": "useTransition.md"
         },
         {
             "word": "<Fragment>",
-            "guide_en": "Fragment_en.md",
-            "guide_fa": "Fragment_fa.md"
+            "guide": "Fragment.md"
         },
         {
             "word": "<>",
-            "guide_en": "Fragment_en.md",
-            "guide_fa": "Fragment_fa.md"
+            "guide": "Fragment.md"
         },
         {
             "word": "<Profiler>",
-            "guide_en": "Profiler_en.md",
-            "guide_fa": "Profiler_fa.md"
+            "guide": "Profiler.md"
         },
         {
             "word": "<StrictMode>",
-            "guide_en": "StrictMode_en.md",
-            "guide_fa": "StrictMode_fa.md"
+            "guide": "StrictMode.md"
         },
         {
             "word": "<Suspense>",
-            "guide_en": "Suspense_en.md",
-            "guide_fa": "Suspense_fa.md"
+            "guide": "Suspense.md"
         },
         {
             "word": "createContext",
-            "guide_en": "createContext_en.md",
-            "guide_fa": "createContext_fa.md"
+            "guide": "createContext.md"
         },
         {
             "word": "forwardRef",
-            "guide_en": "forwardRef_en.md",
-            "guide_fa": "forwardRef_fa.md"
+            "guide": "forwardRef.md"
         },
         {
             "word": "lazy",
-            "guide_en": "lazy_en.md",
-            "guide_fa": "lazy_fa.md"
+            "guide": "lazy.md"
         },
         {
             "word": "memo",
-            "guide_en": "memo_en.md",
-            "guide_fa": "memo_fa.md"
+            "guide": "memo.md"
         },
         {
             "word": "startTransition",
-            "guide_en": "startTransition_en.md",
-            "guide_fa": "startTransition_fa.md"
+            "guide": "startTransition.md"
         }
     ],
-    "not_found": {
-        "en": "not_found_en.md",
-        "fa": "not_found_fa.md"
-    }
+    "not_found": "not_found.md"
 }
