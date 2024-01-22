@@ -4,6 +4,7 @@
 
 - Multiple locale support (instead of only English and Persian).
 - Adding examples for each guide.
+- Adding options for context menu buttons (enabled, disabled)
 
 ## [Unreleased]
 
