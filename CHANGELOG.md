@@ -9,6 +9,8 @@
 ## [Unreleased]
 
 - Parser now adds arrows (`<>`) to the end or the beginning of the parsed words if necessary.
+- Persian and English guide for `useState` got updated, a little.
+- Added Persian guide for `createContext`.
 
 ## [0.9.0]
 
