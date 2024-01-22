@@ -25,7 +25,7 @@ export class Parser {
         }
         var res = "";
         const line = document.lineAt(position.line).text;
-        for (var i = position.character; i >= 0; i--) {
+        for (var i = position.character - 1; i >= 0; i--) {
             if (!this.isAlphabet(line.charAt(i))) {
                 if (line.charAt(i).toLowerCase().localeCompare('<') === 0) {
                     res = line.charAt(i) + res;
@@ -51,7 +51,7 @@ export class Parser {
             }
             res = line.charAt(i) + res;
         }
-        for (var i = position.character + 1; i < line.length; i++) {
+        for (var i = position.character; i < line.length; i++) {
             if (!this.isAlphabet(line.charAt(i))) {
                 if (line.charAt(i).toLowerCase().localeCompare('>') === 0) {
                     res = res + line.charAt(i);
@@ -76,6 +76,14 @@ export class Parser {
                 }
             }
             res = res + line.charAt(i);
+        }
+        if (res.charAt(0).toLowerCase().localeCompare("<") === 0 &&
+            res.charAt(res.length - 1).toLowerCase().localeCompare(">") !== 0) {
+            res = res + ">";
+        }
+        if (res.charAt(res.length - 1).toLowerCase().localeCompare(">") === 0 &&
+            res.charAt(0).toLowerCase().localeCompare("<") !== 0) {
+            res = "<" + res;
         }
         return res;
     }
