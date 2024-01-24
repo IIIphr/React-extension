@@ -20,6 +20,8 @@ Wrap a component tree in a `<Profiler>` to measure its rendering performance.
 
 * Profiling adds some additional overhead, so it is disabled in the production build by default. To opt into production profiling, you need to enable a special production build with profiling enabled.
 
+***
+
 ### `onRender` callback
 
 React will call your `onRender` callback with information about what was rendered.

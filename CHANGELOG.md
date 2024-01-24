@@ -11,6 +11,7 @@
 
 - Added `lazy` Persian guide.
 - Added `memo` Persian guide.
+- Added `Profiler` Persian guide.
 
 ## [0.10.1]
 
