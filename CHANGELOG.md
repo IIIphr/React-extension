@@ -9,6 +9,8 @@
 
 ## [Unreleased]
 
+## [0.10.1]
+
 - Updated createContext Persian guide.
 - Updated useState Persian guide.
 - Added forwardRef Persian guide.
