@@ -9,12 +9,14 @@
 
 ## [Unreleased]
 
+- Added `lazy` Persian guide.
+
 ## [0.10.1]
 
-- Updated createContext Persian guide.
-- Updated useState Persian guide.
-- Added forwardRef Persian guide.
-- Added Fragment Persian guide (+ Minor changes to English version of the same guide).
+- Updated `createContext` Persian guide.
+- Updated `useState` Persian guide.
+- Added `forwardRef` Persian guide.
+- Added `Fragment` Persian guide (+ Minor changes to English version of the same guide).
 
 ## [0.10.0]
 
