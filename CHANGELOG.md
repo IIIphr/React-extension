@@ -9,6 +9,8 @@
 
 ## [Unreleased]
 
+- Updated createContext Persian guide.
+
 ## [0.10.0]
 
 - Parser now adds arrows (`<>`) to the end or the beginning of the parsed words if necessary.
