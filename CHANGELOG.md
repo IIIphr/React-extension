@@ -11,6 +11,7 @@
 
 - Updated createContext Persian guide.
 - Updated useState Persian guide.
+- Added forwardRef Persian guide.
 
 ## [0.10.0]
 
