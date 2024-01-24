@@ -10,6 +10,7 @@
 ## [Unreleased]
 
 - Updated createContext Persian guide.
+- Updated useState Persian guide.
 
 ## [0.10.0]
 
