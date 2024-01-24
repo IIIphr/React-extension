@@ -9,6 +9,8 @@
 
 ## [Unreleased]
 
+## [0.10.2]
+
 - Added `lazy` Persian guide.
 - Added `memo` Persian guide.
 - Added `Profiler` Persian guide.
