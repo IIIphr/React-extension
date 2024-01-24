@@ -10,6 +10,7 @@
 ## [Unreleased]
 
 - Added `lazy` Persian guide.
+- Added `memo` Persian guide.
 
 ## [0.10.1]
 
