@@ -19,3 +19,6 @@ Right now, I'm writing it as a project for my bachelor degree, so I'm doing most
 If you are a React developer and also speak persian, you can be of great help to this project. Translating English guides into Persian ones, without losing meaning, accuracy and flow of the text takes time, skill and knowledge.
 
 I'll complie a document later down the line on how to write a guide and add it to the extension. There will be an acceptance procedure for guranteed quality and standards of the guides and for the sake of consistency.
+
+### Contributers
+Special thanks to [Mr.Razian](https://github.com/MRazian) for the idea and guidance throughout the development of this extension. 
