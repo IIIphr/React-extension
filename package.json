@@ -70,7 +70,7 @@
   },
   "publisher": "SepehrEbrahimi",
   "dependencies": {
-    "markdown-it": "^14.0.0",
+    "markdown-it": "^14.1.1",
     "markdown-it-container": "^4.0.0"
   }
 }
